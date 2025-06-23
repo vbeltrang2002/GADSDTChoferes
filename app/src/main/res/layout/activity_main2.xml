@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <ImageView
+        android:id="@+id/icLogoGad"
+        android:layout_width="198dp"
+        android:layout_height="194dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_logogad"
+        android:scaleType="fitCenter"
+        android:contentDescription="Logo GAD"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/textBienvenida"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="BIENVENIDO AL SISTEMA DEL GAD MUNICIPAL"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/icLogoGad" />
+
+    <TextView
+        android:id="@+id/textSeleccion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Seleccione la opción deseada"
+        android:textSize="14sp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/textBienvenida"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ImageView
+        android:id="@+id/icVolqueta"
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="Volqueta"
+        android:src="@drawable/ic_volqueta"
+        app:layout_constraintEnd_toStartOf="@id/icChofer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textSeleccion" />
+
+    <ImageView
+        android:id="@+id/icChofer"
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="32dp"
+        android:contentDescription="Chofer"
+        android:src="@drawable/ic_chofer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/icVolqueta"
+        app:layout_constraintTop_toBottomOf="@id/textSeleccion" />
+
+    <Button
+        android:id="@+id/btnVolqueta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="VOLQUETA"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/icVolqueta"
+        app:layout_constraintStart_toStartOf="@id/icVolqueta"
+        app:layout_constraintEnd_toEndOf="@id/icVolqueta"/>
+
+    <Button
+        android:id="@+id/btnChofer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CHOFER"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/icChofer"
+        app:layout_constraintStart_toStartOf="@id/icChofer"
+        app:layout_constraintEnd_toEndOf="@id/icChofer"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
